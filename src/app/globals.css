@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { --ink: #172033; }
+* { box-sizing: border-box; }
+body { margin: 0; color: var(--ink); background: #fafbff; font-family: Arial, Helvetica, sans-serif; }
+button, textarea, input { font: inherit; }
+.gradient { background: radial-gradient(circle at 15% 10%, #e8e7ff 0, transparent 32%), radial-gradient(circle at 90% 0%, #dff8ed 0, transparent 30%), #fafbff; }
+.card { @apply rounded-3xl border border-slate-200 bg-white shadow-soft; }
+.pill { @apply rounded-full px-3 py-1 text-xs font-bold; }
